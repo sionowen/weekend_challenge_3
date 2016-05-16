@@ -29,17 +29,15 @@ $(document).on('ready', function() {
       data: values,
       success: function(response) {
         console.log(response);
-        $('.result').text(response);
         $('#displayedNum').val(response);
       }
     });
-    // $('#calculator').trigger("reset");
   })
 
 	$('.clearForm').on('click', function() {
 		event.preventDefault();
 		$('#calculator').trigger("reset");
-
+    values = {};
 	})
 
 })

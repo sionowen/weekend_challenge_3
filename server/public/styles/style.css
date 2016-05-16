@@ -7,3 +7,19 @@ input[type=submit], button {
     font-size: 30px;
     margin: 5px;
 }
+input[type=submit]{
+  background-color: orange;
+}
+.display{
+  background-color: dimgray;
+  height: 40px;
+  width: 283px;
+  text-align: right;
+  font-size: 26px;
+  color: white;
+}
+.calculatorContainer{
+  margin-left: 25%;
+  width: 292px;
+  background-color: black;
+}
