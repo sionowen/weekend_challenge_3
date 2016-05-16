@@ -2,11 +2,14 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
-
+var operation = require('./routes/operation');
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(bodyParser.urlencoded({extended: true}));
+
+//routes
+app.use('/operation', operation);
 
 app.get('/*', function(req, res) {
   var file = req.params[0] || 'views/index.html';

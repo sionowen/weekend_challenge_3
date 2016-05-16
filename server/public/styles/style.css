@@ -1,0 +1,10 @@
+
+
+input[type=submit] {
+  border: none; /*rewriting standard style, it is necessary to be able to change the size*/
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  margin: 5px;
+}
