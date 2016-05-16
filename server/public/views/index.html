@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Weekend Challenge 3</title>
-  <link rel="stylesheet" href="/styles/style.css" />
-  <script type="text/javascript" src="/assets/vendors/jquery.min.js"></script>
-  <script type="text/javascript" src="/scripts/client.js"></script>
+    <title>Weekend Challenge 3</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script type="text/javascript" src="/assets/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="/scripts/client.js"></script>
 </head>
+
 <body>
-  <h1>Calculator</h1>
+    <h1>Calculator</h1>
     <form id="calculator">
-      <label for="firstNum">First Number: </label>
-      <input type="number" id="firstNum" name="firstNum" />
-      <br>
-      <label for="secondNum">Second Number: </label>
-      <input type="number" id="secondNum" name="secondNum" />
-      <br>
-      <input type="submit" class="inputButton" name="plus" value="+">
-      <input type="submit" class="inputButton" name="minus" value="-">
-      <br>
-      <input type="submit" class="inputButton" name="multiply" value="x">
-      <input type="submit" class="inputButton" name="divide" value="/">
-      <button class="clearForm">AC</button>
+        <label for="displayedNum">First Number: </label>
+        <input type="number" id="displayedNum" name="displayedNum" />
+        <br>
+        <button class="oneButton numSelector">1</button>
+        <button class="twoButton numSelector">2</button>
+        <button class="threeButton numSelector">3</button>
+        <input type="submit" class="inputButton" name="plus" value="+">
+        <br>
+        <button class="fourButton numSelector">4</button>
+        <button class="fiveButton numSelector">5</button>
+        <button class="sixButton numSelector">6</button>
+        <input type="submit" class="inputButton" name="minus" value="-">
+        <br>
+        <button class="sevenButton numSelector">7</button>
+        <button class="eightButton numSelector">8</button>
+        <button class="nineButton numSelector">9</button>
+        <input type="submit" class="inputButton" name="multiply" value="x">
+        <br>
+        <button class="clearForm">AC</button>
+        <button class="zeroButton numSelector">0</button>
+        <input type="submit" class="equalButton" name="equals" value="=">
+        <input type="submit" class="inputButton" name="divide" value="&divide">
     </form>
     <h2>Result: <h2 class="result"></h2></h2>
 
 </body>
+
 </html>
